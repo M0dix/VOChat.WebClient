@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница каталогов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="helpButton">Помощь</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span id="backButton" class="back-button">&#8592</span>
+                <span class="close-button">&times;</span>
+            </div>
+            <div id="supportOptions"> 
+                <button id="techSupportButton">Связаться с техподдержкой</button>
+                <button id="salesSupportButton">Связаться с продавцом</button>
+            </div>
+            <div id="chatForm" style="display:none;">
+                <p class="instruction">Здравствуйте! Опишите вашу проблему в форме для сообщения ниже:</p>
+                <textarea id="messageInput" placeholder="Введите ваше сообщение"></textarea>
+                <button id="sendInitialMessageButton">Отправить</button>
+            </div> 
+            <div id="chatForm" style="display:none;">
+                <div id="chatMessages"></div>
+                <textarea id="messageInput" placeholder="Введите ваше сообщение"></textarea>
+                <button id="sendMessageButton">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
